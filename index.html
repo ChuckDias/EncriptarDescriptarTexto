@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/genie.png" type="image/x-icon">
+    <title>Decrypt and Encrypt Text</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="./assets/genie.png" alt="logo Chuck">
+        <h1>Codificando e decoficando textos</h1>
+    </header>
+    <main>
+
+        <section class="conteudo1">
+            <div class="conteudo__texto">
+                <div class="conteudo__texto__digitar">
+                    <textarea id="input-texto" placeholder="Digite seu texto aqui:"></textarea>
+                    <Letras><ion-icon name="alert-circle"></ion-icon>Letras minúsculas e sem acento</p>
+                </div>
+                <div class="conteudo__botao1" id="texto-incluido">
+                    <input type="button" class="conteudo__botao__cript" value="Criptografar" onclick="criptografar()">
+                    <input type="button" class="conteudo__botao__cript" value="Descriptografar" onclick="descriptografar()">
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo2">
+            
+            <div id="output">
+                <img src="./assets/genie.png" alt="logo Chuck">
+                <h2>Seu texto aparecerá aqui!</h2>
+                <span>Digite o texto que quer criptografar ou descriptografar.</span>  
+                <input type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
+
+            </div>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+    <footer class="rodape">
+        <div class="icones">
+            <a href="https://www.linkedin.com/in/diascharles/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/ChuckDias" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.twitch.tv/noobzao1984" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
+        </div>
+        <h3>Criado por Charles Dias</h3>
+    </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
